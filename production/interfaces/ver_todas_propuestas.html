@@ -28,6 +28,7 @@
 
     <!-- Custom Theme Style -->
     <link href="../../build/css/custom.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="propuestas.css">
   </head>
 
   <body class="nav-md">
@@ -215,13 +216,13 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Users <small>Some examples to get you started</small></h3>
+                <h3>Propuestas: <small>Todas las propuestas</small></h3>
               </div>
 
               <div class="title_right">
                 <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
+                    <input type="text" class="form-control" placeholder="Buscar...">
                     <span class="input-group-btn">
                       <button class="btn btn-secondary" type="button">Go!</button>
                     </span>
@@ -233,11 +234,10 @@
             <div class="clearfix"></div>
 
             <div class="row">
-
               <div class="col-md-12 col-sm-12 ">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Responsive example<small>Users</small></h2>
+                    <h2>Todas las propuestas actualmente en proceso.</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -257,21 +257,15 @@
                       <div class="row">
                           <div class="col-sm-12">
                             <div class="card-box table-responsive">
-                    <p class="text-muted font-13 m-b-30">
-                      Responsive is an extension for DataTables that resolves that problem by optimising the table's layout for different screen sizes through the dynamic insertion and removal of columns from the table.
-                    </p>
-					
-                    <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                    <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                       <thead>
                         <tr>
                           <th>Memorista</th>
                           <th>Campus</th>
                           <th>Título propuesto</th>
                           <th>Fecha</th>
-                          <th>Origen</th>
                           <th>Profesor guía</th>
                           <th>Estado</th>
-                          <th>Resolución</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>
@@ -281,10 +275,8 @@
                           <td>Santiago</td>
                           <td>Patrones de diseño para menús digitales</td>
                           <td>24/06/2023</td>
-                          <td>Interno</td>
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Pendiente</td>
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -292,10 +284,8 @@
                           <td>Valparaíso</td>
                           <td>Usabilidad en aplicaciones de productividad</td>
                           <td>07/06/2023</td>
-                          <td>Externo</td>
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -303,10 +293,8 @@
                           <td>Santiago</td>
                           <td>Interfaces tangibles en el aula</td>
                           <td>03/07/2023</td>
-                          <td>Interno</td>
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -314,10 +302,8 @@
                           <td>Valparaíso</td>
                           <td>Experiencia de usuario en realidad aumentada</td>
                           <td>29/06/2023</td>
-                          <td>Externo</td>
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -325,10 +311,8 @@
                           <td>Santiago</td>
                           <td>Interacción persona-ordenador en dispositivos móviles</td>
                           <td>19/05/2023</td>
-                          <td>Interno</td>
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -336,10 +320,8 @@
                           <td>Valparaíso</td>
                           <td>Interfaces de usuario adaptables</td>
                           <td>14/06/2023</td>
-                          <td>Externo</td>
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -347,10 +329,8 @@
                           <td>Santiago</td>
                           <td>Experiencia de usuario en sistemas de entretenimiento</td>
                           <td>23/05/2023</td>
-                          <td>Interno</td>
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -358,10 +338,8 @@
                           <td>Valparaíso</td>
                           <td>Usabilidad en aplicaciones de salud</td>
                           <td>01/06/2023</td>
-                          <td>Externo</td>
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -369,10 +347,8 @@
                           <td>Santiago</td>
                           <td>Interfaces táctiles en dispositivos IoT</td>
                           <td>15/05/2023</td>
-                          <td>Interno</td>
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          <td class="td-badge"><span class="badge-repr">Reprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -380,21 +356,17 @@
                           <td>Valparaíso</td>
                           <td>Experiencia de usuario en aplicaciones de transporte</td>
                           <td>30/06/2023</td>
-                          <td>Externo</td>
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
-                          <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
+                          <td class="td-badge"><span class="badge-repr">Reprobado</span></td>
+                          <td><a href="">Descargar</a></a></td>
                         </tr>
                         <tr>
                           <td>Fernando Mardones</td>
                           <td>Santiago</td>
                           <td>Interfaces de usuario en aplicaciones financieras</td>
                           <td>20/05/2023</td>
-                          <td>Interno</td>
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -402,10 +374,8 @@
                           <td>Valparaíso</td>
                           <td>Usabilidad en sistemas de entretenimiento interactivo</td>
                           <td>09/06/2023</td>
-                          <td>Externo</td>
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -413,21 +383,19 @@
                           <td>Santiago</td>
                           <td>Diseño centrado en el usuario</td>
                           <td>26/05/2023</td>
-                          <td>Interno</td>
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
-                          <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
+                          <td class="td-badge"><span class="badge-repr">Reprobado</span></td>
+                          <td><a href="">Descargar</a></a></td>
                         </tr>
                         <tr>
                           <td>Luz Gómez</td>
                           <td>Valparaíso</td>
                           <td>Experiencia de usuario en aplicaciones de fotografía</td>
                           <td>12/07/2023</td>
-                          <td>Externo</td>
+                          
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -435,10 +403,10 @@
                           <td>Santiago</td>
                           <td>Interacción persona-ordenador en dispositivos wearables</td>
                           <td>27/05/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -446,10 +414,10 @@
                           <td>Valparaíso</td>
                           <td>Usabilidad en aplicaciones educativas</td>
                           <td>17/06/2023</td>
-                          <td>Externo</td>
+                          
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -457,21 +425,21 @@
                           <td>Santiago</td>
                           <td>Experiencia de usuario en sistemas de reserva de hoteles</td>
                           <td>31/05/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Lioubov Dombrovskaia</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
-                          <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
+                          
+                          <td class="td-badge"><span class="badge-repr">Reprobado</span></td>
+                          <td><a href="">Descargar</a></a></td>
                         </tr>
                         <tr>
                           <td>Isabel Sanhueza</td>
                           <td>Santiago</td>
                           <td>Astroinformática en la exploración espacial</td>
                           <td>27/06/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Mauricio Solar</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -479,10 +447,10 @@
                           <td>Santiago</td>
                           <td>Informática en general y sus aplicaciones</td>
                           <td>13/06/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Federico Meza</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -490,10 +458,10 @@
                           <td>Valparaíso</td>
                           <td>Informática en general y sus avances</td>
                           <td>04/07/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Federico Meza</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -501,10 +469,10 @@
                           <td>Santiago</td>
                           <td>Computación científica en la investigación</td>
                           <td>21/05/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Elizabeth Montero</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -512,10 +480,10 @@
                           <td>Valparaíso</td>
                           <td>Visualización de datos en aplicaciones móviles</td>
                           <td>15/06/2023</td>
-                          <td>Interno</td>
+                          
                           <td>José Martí</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -523,10 +491,10 @@
                           <td>Santiago</td>
                           <td>Astroinformática en el estudio de galaxias</td>
                           <td>10/07/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Mauricio Solar</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -534,10 +502,10 @@
                           <td>Santiago</td>
                           <td>Informática en general y su impacto en la sociedad</td>
                           <td>19/06/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Federico Meza</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -545,10 +513,10 @@
                           <td>Valparaíso</td>
                           <td>Computación científica en la simulación de sistemas</td>
                           <td>29/05/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Elizabeth Montero</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -556,10 +524,10 @@
                           <td>Santiago</td>
                           <td>Visualización de datos en sistemas de análisis</td>
                           <td>03/07/2023</td>
-                          <td>Interno</td>
+                          
                           <td>José Martí</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -567,10 +535,10 @@
                           <td>Santiago</td>
                           <td>Visualización de datos en el análisis financiero</td>
                           <td>16/06/2023</td>
-                          <td>Interno</td>
+                          
                           <td>José Martí</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -578,10 +546,10 @@
                           <td>Valparaíso</td>
                           <td>Astroinformática en la exploración de exoplanetas</td>
                           <td>11/07/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Mauricio Solar</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -589,10 +557,10 @@
                           <td>Santiago</td>
                           <td>Informática en general y su evolución histórica</td>
                           <td>28/06/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Federico Meza</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -600,10 +568,10 @@
                           <td>Valparaíso</td>
                           <td>Computación científica en la simulación de materiales</td>
                           <td>14/06/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Elizabeth Montero</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -611,10 +579,10 @@
                           <td>Santiago</td>
                           <td>Visualización de datos en sistemas de salud</td>
                           <td>09/07/2023</td>
-                          <td>Interno</td>
+                          
                           <td>José Martí</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
@@ -622,10 +590,10 @@
                           <td>Valparaíso</td>
                           <td>Astroinformática en la búsqueda de vida extraterrestre</td>
                           <td>25/06/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Mauricio Solar</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -633,10 +601,10 @@
                           <td>Santiago</td>
                           <td>Informática en general y sus aplicaciones empresariales</td>
                           <td>05/07/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Federico Meza</td>
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
@@ -644,10 +612,10 @@
                           <td>Valparaíso</td>
                           <td>Computación científica en la modelización climática</td>
                           <td>20/06/2023</td>
-                          <td>Interno</td>
+                          
                           <td>Elizabeth Montero</td>
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                       </tbody>

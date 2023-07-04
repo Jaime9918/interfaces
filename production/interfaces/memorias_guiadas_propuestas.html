@@ -28,6 +28,7 @@
 
     <!-- Custom Theme Style -->
     <link href="../../build/css/custom.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="propuestas.css">
   </head>
 
   <body class="nav-md">
@@ -214,13 +215,13 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Users <small>Some examples to get you started</small></h3>
+                <h3>Propuestas: <small>Propuestas guiadas</small></h3>
               </div>
 
               <div class="title_right">
                 <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
+                    <input type="text" class="form-control" placeholder="Buscar...">
                     <span class="input-group-btn">
                       <button class="btn btn-secondary" type="button">Go!</button>
                     </span>
@@ -232,11 +233,10 @@
             <div class="clearfix"></div>
 
             <div class="row">
-
               <div class="col-md-12 col-sm-12 ">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Responsive example<small>Users</small></h2>
+                    <h2>Propuestas guiadas por usted y su estado.</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -256,211 +256,146 @@
                       <div class="row">
                           <div class="col-sm-12">
                             <div class="card-box table-responsive">
-                    <p class="text-muted font-13 m-b-30">
-                      Responsive is an extension for DataTables that resolves that problem by optimising the table's layout for different screen sizes through the dynamic insertion and removal of columns from the table.
-                    </p>
-					
-                    <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                    <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                       <thead>
                         <tr>
                           <th>Memorista</th>
-                          <th>Campus</th>
-                          <th>Título propuesto</th>
+                          <th>Titulo Memoria</th>
                           <th>Fecha</th>
-                          <th>Origen</th>
                           <th>Estado</th>
-                          <th>Resolución</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>
+
+
                       <tbody>
                         <tr>
                           <td>Manuel Valenzuela</td>
-                          <td>Santiago</td>
                           <td>Patrones de diseño para menús digitales</td>
                           <td>24/06/2023</td>
-                          <td>Interno</td>
-                           
-                          <td style="color:green">Evaluado</td>
-                          <td>Pendiente</td>
-                          <td><a href="">Descargar</a></td>
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
+                          <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
                           <td>Pamela Rojas</td>
-                          <td>Valparaíso</td>
                           <td>Usabilidad en aplicaciones de productividad</td>
                           <td>07/06/2023</td>
-                          <td>Externo</td>
-                           
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
+                          
+
                         </tr>
                         <tr>
                           <td>Ricardo Lagos</td>
-                          <td>Santiago</td>
                           <td>Interfaces tangibles en el aula</td>
                           <td>03/07/2023</td>
-                          <td>Interno</td>
-                           
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
+                          
+
                         </tr>
                         <tr>
                           <td>Valentina Medina</td>
-                          <td>Valparaíso</td>
                           <td>Experiencia de usuario en realidad aumentada</td>
                           <td>29/06/2023</td>
-                          <td>Externo</td>
-                           
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
+                          
+
                         </tr>
                         <tr>
                           <td>Diego Espinoza</td>
-                          <td>Santiago</td>
                           <td>Interacción persona-ordenador en dispositivos móviles</td>
                           <td>19/05/2023</td>
-                          <td>Interno</td>
-                           
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
+
                         </tr>
                         <tr>
                           <td>Mariana Gómez</td>
-                          <td>Valparaíso</td>
                           <td>Interfaces de usuario adaptables</td>
                           <td>14/06/2023</td>
-                          <td>Externo</td>
-                           
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
                           <td>Rodrigo Soto</td>
-                          <td>Santiago</td>
                           <td>Experiencia de usuario en sistemas de entretenimiento</td>
                           <td>23/05/2023</td>
-                          <td>Interno</td>
-                           
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
                           <td>Sofía Castro</td>
-                          <td>Valparaíso</td>
                           <td>Usabilidad en aplicaciones de salud</td>
                           <td>01/06/2023</td>
-                          <td>Externo</td>
-                           
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
                           <td>Javier Morales</td>
-                          <td>Santiago</td>
                           <td>Interfaces táctiles en dispositivos IoT</td>
                           <td>15/05/2023</td>
-                          <td>Interno</td>
-                           
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          <td class="td-badge"><span class="badge-repr">Reprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
                           <td>Camila Rojas</td>
-                          <td>Valparaíso</td>
                           <td>Experiencia de usuario en aplicaciones de transporte</td>
                           <td>30/06/2023</td>
-                          <td>Externo</td>
-                           
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
-                          <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
+                          <td class="td-badge"><span class="badge-repr">Reprobado</span></td>
+                          <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
                           <td>Fernando Mardones</td>
-                          <td>Santiago</td>
                           <td>Interfaces de usuario en aplicaciones financieras</td>
                           <td>20/05/2023</td>
-                          <td>Interno</td>
-                           
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
                           <td>Carolina Soto</td>
-                          <td>Valparaíso</td>
                           <td>Usabilidad en sistemas de entretenimiento interactivo</td>
                           <td>09/06/2023</td>
-                          <td>Externo</td>
-                           
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
                           <td>Andrés Lagos</td>
-                          <td>Santiago</td>
                           <td>Diseño centrado en el usuario</td>
                           <td>26/05/2023</td>
-                          <td>Interno</td>
-                           
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
-                          <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
+                          <td class="td-badge"><span class="badge-repr">Reprobado</span></td>
+                          <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
                           <td>Luz Gómez</td>
-                          <td>Valparaíso</td>
                           <td>Experiencia de usuario en aplicaciones de fotografía</td>
                           <td>12/07/2023</td>
-                          <td>Externo</td>
-                           
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
                           <td>Juan Herrera</td>
-                          <td>Santiago</td>
                           <td>Interacción persona-ordenador en dispositivos wearables</td>
                           <td>27/05/2023</td>
-                          <td>Interno</td>
-                           
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
+                          <td class="td-badge"><span class="badge-pend">Pendiente</span></td>
                           <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
                         </tr>
                         <tr>
                           <td>María Silva</td>
-                          <td>Valparaíso</td>
                           <td>Usabilidad en aplicaciones educativas</td>
                           <td>17/06/2023</td>
-                          <td>Externo</td>
-                           
-                          <td style="color:green">Evaluado</td>
-                          <td>Aprobado</td>
+                          <td class="td-badge"><span class="badge-apr">Aprobado</span></td>
                           <td><a href="">Descargar</a></td>
                         </tr>
                         <tr>
                           <td>Carlos Soto</td>
-                          <td>Santiago</td>
                           <td>Experiencia de usuario en sistemas de reserva de hoteles</td>
                           <td>31/05/2023</td>
-                          <td>Interno</td>
-                           
-                          <td style="color:red">No evaluado</td>
-                          <td>Pendiente</td>
-                          <td><a href="">Descargar</a> | <a href="">Evaluar</a></td>
+                          <td class="td-badge"><span class="badge-repr">Reprobado</span></td>
+                          <td><a href="">Descargar</a></td>
                         </tr>
+                       
                       </tbody>
                     </table>
                   </div>
